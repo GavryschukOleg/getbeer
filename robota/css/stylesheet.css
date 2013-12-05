@@ -102,10 +102,14 @@ header div {
 }
 
 .menu ul li ul li {
-    background: antiquewhite;
+    background: white;
     padding: 13px 15px 0 40px;
-}
+    opacity: 0.7;
 
+}
+.menu ul li ul li:hover{
+    background:lightskyblue;
+}
 .menu-style {
     margin-left: 30px;
     width: 200px;
