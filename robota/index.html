@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+
+<head>
+
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+</head>
+<body>
+
+<div id="main-wrapper">
+    <header>
+        <div class="logo">Logo</div>
+        <div class="two-buttons">
+            <a><img src="img/reload_button.png" alt="reload" /></a>
+            <a><img src="img/e_button.png" alt="random" /></a>
+        </div>
+        <div class="name-case">
+            <h3 class="name-case-h3">ИМЯ КЕЙСА</h3>
+            <input id="name-case" placeholder="" type="text" style="display: none"/>
+            <p>(кликни чтобы изменить)</p>
+        </div>
+        <div class="help">
+            <p>
+                <a>Куда нажимать</a>
+            </p>
+        </div>
+        <div class="publish">
+            <form>
+                <input id="publish" type="checkbox" />
+                <label>ОПУБЛИКОВАТЬ</label>
+            </form>
+        </div>
+        <div class="save">Сохранить</div>
+    </header>
+    <!--<?php-->
+    <!--require_once "blocks/header.php";-->
+    <!--?>-->
+    <div id="wrapper">
+        <aside class="menu">
+            <ul class="menu-style">
+                <li class="telephone">
+                        <a id="telephone"><strong>Телефоны</strong></a>
+                        <ul class="telephone-display" style="display: none">
+                            <li>Телефоны</li>
+                            <li>Планшеты</li>
+                            <li>Магниты</li>
+                            <li>Стаканы</li>
+                            <li>Елочные игрушки</li>
+                            <li>Футболки</li>
+                        </ul>
+                </li>
+                <!--<img src="img/iphone.png" alt='iphone'/>-->
+                <li class="iphone">
+                    <a id="iphone"><strong>iPhone 5 | 5s</strong></a>
+                    <ul class="iphone-display" style="display: none">
+                        <li>iPhone 5 3D</li>
+                        <li>iPhone 4 3D</li>
+                        <li>iPhone 5 | 5s</li>
+                        <li>iPhone 4 | 4s</li>
+                        <li>iPad 2 | 3 | 4</li>
+                        <li>iPad mini</li>
+                        <li>iPod touch 5</li>
+                        <li>Galaxy S3</li>
+                        <li>Galaxy S4</li>
+                        <li>Galaxy S4 mini</li>
+                    </ul>
+                </li>
+                <!--<img src="img/plastic.png" alt='plastic'/>-->
+                <li class="plastic">
+                    <a id="plastic"><strong>Пластик</strong></a>
+                    <ul class="plastic-display" style="display: none">
+                        <li>Пластик Черный</li>
+                        <li>Пластик Белый</li>
+                        <li>Пластик Прозрачный</li>
+                        <li>Резина Белая</li>
+                        <li>Резина Чернаяи</li>
+                        <li>Пластик Прозрачный</li>
+                        <li>Скоро Розовый</li>
+                        <li>Скоро Сине-зелёный</li>
+                        <li>Скоро Фиолетовый</li>
+                        <li>Скоро Матовый</li>
+                        <li>Скоро Матовый</li>
+                    </ul>
+                </li>
+                <!--<img src="img/chess.png" alt='chess'/>-->
+                <li class="chess">
+                    <a id="chess"><strong>Шахматы</strong></a>
+                    <ul class="chess-display" style="display: none">
+                        <li>Kartinka1</li>
+                        <li>Kartinka2</li>
+                        <li>Kartinka3</li>
+                        <li>Kartinka4</li>
+                        <li>Kartinka5</li>
+                        <li>Kartinka6</li>
+                        <li>Kartinka7</li>
+                    </ul>
+                </li>
+                <!--<img src="img/without-filter.png" alt='without-filter'/>-->
+                <li class="without-filter">
+                    <a id="without-filter"><strong>Без фильтра</strong></a>
+                    <ul class="without-filter-display" style="display: none">
+                        <li>Kartinka1</li>
+                        <li>Kartinka2</li>
+                        <li>Kartinka3</li>
+                        <li>Kartinka4</li>
+                        <li>Kartinka5</li>
+                        <li>Kartinka6</li>
+                        <li>Kartinka7</li>
+                    </ul>
+                </li>
+
+            </ul>
+        </aside>
+
+
+
+        <div id="design-panel">
+
+        </div>
+
+
+
+    </div>
+    <div class="appendix"></div>
+</div>
+
+<footer>
+    <ul class="social-network">
+        <li class="instagram">
+            <a>Instagram</a>
+        </li>
+        <li class="facebook">
+            <a>Facebook</a>
+        </li>
+        <li class="vk">
+            <a>Вконтакте</a>
+        </li>
+        <li class="upload">
+            <a>Загрузить</a>
+        </li>
+    </ul>
+</footer>
+
+<!--<?php-->
+<!--require_once "blocks/footer.php";-->
+<!--?>-->
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $(".telephone").click(function () {
+            $(".iphone-display").slideUp(1000);
+            $(".plastic-display").slideUp(1000);
+            $(".chess-display").slideUp(1000);
+            $(".without-filter-display").slideUp(1000);
+            $(".telephone-display").slideToggle(1000);
+        });
+
+        $(".iphone").click(function () {
+            $(".telephone-display").slideUp(1000);
+            $(".plastic-display").slideUp(1000);
+            $(".chess-display").slideUp(1000);
+            $(".without-filter-display").slideUp(1000);
+            $(".iphone-display").slideToggle(1000);
+        });
+
+        $(".plastic").click(function () {
+            $(".telephone-display").slideUp(1000);
+            $(".iphone-display").slideUp(1000);
+            $(".chess-display").slideUp(1000);
+            $(".without-filter-display").slideUp(1000);
+            $(".plastic-display").slideToggle(1000);
+        });
+
+        $(".chess").click(function () {
+            $(".telephone-display").slideUp(1000);
+            $(".iphone-display").slideUp(1000);
+            $(".plastic-display").slideUp(1000);
+            $(".without-filter-display").slideUp(1000);
+            $(".chess-display").slideToggle(1000);
+        });
+
+        $(".without-filter").click(function () {
+            $(".telephone-display").slideUp(1000);
+            $(".iphone-display").slideUp(1000);
+            $(".plastic-display").slideUp(1000);
+            $(".chess-display").slideUp(1000);
+            $(".without-filter-display").slideToggle(1000);
+        });
+
+
+
+        $(".name-case-h3").click(function() {
+            $("#name-case").show(500);
+            $(".name-case-h3").css('display','none');
+            $('input#name-case').focus();
+        });
+        $('#wrapper').click(function(){
+            event.stopPropagation();
+            $("#name-case").css('display','none');
+            $(".name-case-h3").css('display','block');
+        });
+
+    });
+
+
+
+</script>
+
+
+
+</body>
+</html>

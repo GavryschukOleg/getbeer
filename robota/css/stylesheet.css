@@ -1,0 +1,198 @@
+* {
+    padding:0;
+    margin:0;
+
+}
+html,body {
+    height:100%;
+}
+
+#main-wrapper {
+    min-height:100%;
+    background: url("/img/cartographer.png");
+}
+
+a , li {
+    cursor: pointer;
+}
+
+footer {
+    background: rgba(30, 30, 30, 0.77);
+    /*border-top: 1px solid #AD9B8C;*/
+    height:30px;
+    margin-top:-30px;
+}
+
+footer ul li {
+    display: inline-block;
+}
+
+.appendix {
+    height:30px;
+    clear:both;
+}
+
+header {
+    width: 100%;
+    height: 47px;
+    background: rgba(32, 32, 32, 0.77);
+    color: white;
+}
+
+header div {
+    display: inline-block;
+}
+
+.logo {
+    width: 10%;
+    text-align: center;
+}
+
+.two-buttons {
+    width: 10%;
+}
+
+.name-case {
+    width: 45%;
+    text-align: center;
+}
+
+.help {
+    width: 10%;
+}
+
+.help p a {
+    border-bottom: 1px dashed white;
+}
+
+.publish {
+    width: 15%;
+}
+
+.publish input, label {
+    display: inline-block;
+}
+
+.save {
+    width: 5%;
+}
+
+
+/*////////////////////// C O N T E N T ////////////////*/
+
+#wrapper {
+    min-height: 545px;
+}
+
+.menu {
+    padding-top: 50px;
+}
+
+.menu ul li a {
+    padding-left: 50px;
+}
+
+.menu ul li ul {
+    padding-top: 22px;
+}
+
+.menu ul li ul :last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.menu ul li ul li {
+    background: antiquewhite;
+    padding: 13px 15px 0 40px;
+}
+
+.menu-style {
+    margin-left: 30px;
+    width: 200px;
+}
+
+.telephone strong {
+    font-size: 20px;
+    padding-bottom: 40px;
+}
+
+.iphone strong {
+    font-size: 20px;
+}
+
+.plastic strong {
+    font-size: 20px;
+}
+
+.chess strong {
+    font-size: 20px;
+}
+
+.without-filter strong {
+    font-size: 20px;
+}
+/*.menu-style strong {*/
+    /*font-size: 20px;*/
+/*}*/
+
+.menu-style li {
+    list-style: none;
+}
+
+.telephone {
+    background: url("/img/tel.jpg");
+    background-repeat: no-repeat;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.iphone {
+    background: url("/img/iphone.png");
+    background-repeat: no-repeat;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.plastic {
+    background: url("/img/plastic.png");
+    background-repeat: no-repeat;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.chess {
+    background: url("/img/chess.png");
+    background-repeat: no-repeat;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.without-filter {
+    background: url("/img/iphone.png");
+    background-repeat: no-repeat;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.social-network a {
+    padding-left: 20px;
+}
+
+.instagram {
+    background: url(/img/insta.png) no-repeat left center;
+}
+
+.facebook {
+    background: url(/img/face.png) no-repeat left center;
+}
+
+.vk {
+    background: url(/img/vk.png) no-repeat left center;
+}
+
+.upload {
+    background: url(/img/uploading.png) no-repeat left center;
+}
+
+
+
