@@ -182,6 +182,7 @@ header div {
     padding-left: 20px;
 }
 
+
 .instagram {
     background: url(/img/insta.png) no-repeat left center;
 }
@@ -198,5 +199,9 @@ header div {
     background: url(/img/uploading.png) no-repeat left center;
 }
 
-
+#design-panel {
+    width: 100px;
+    left: 50%;
+    margin-left: -50px;
+}
 
